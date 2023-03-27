@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Listagem de Contatos";
+}
+
+<h1>Listagem de Contatos</h1>
+
+<a class="btn btn-primary btn-lg float-end" role="button" title="Adicionar Contato" asp-controller="Contato" asp-action="Criar"><i class="bi bi-plus"></i></a>
+
+<table class="table">
+  <thead>
+    <tr class="py-3">
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Celular</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto@hotmail.com</td>
+      <td>21 94332-1232</td>
+      <td>
+        <a class="btn btn-outline-secondary" role="button" title="Editar Contato" asp-controller="Contato" asp-action="Editar"><i class="bi bi-pencil"></i></a>
+        <a class="btn btn-outline-danger" role="button" title="Deletar Contato" asp-controller="Contato" asp-action="Apagar"><i class="bi bi-trash"></i></a>
+      </td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton@hotmail.com</td>
+      <td>34 92832-2345</td>
+      <td>
+        <a class="btn btn-outline-secondary" href="#" role="button" title="Editar Contato"><i class="bi bi-pencil"></i></a>
+        <a class="btn btn-outline-danger" href="#" role="button" title="Deletar Contato"><i class="bi bi-trash"></i></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>LarrytheBird@hotmail.com</td>
+      <td>11 99832-4903</td>
+      <td>
+        <a class="btn btn-outline-secondary" href="#" role="button" title="Editar Contato"><i class="bi bi-pencil"></i></a>
+        <a class="btn btn-outline-danger" href="#" role="button" title="Deletar Contato"><i class="bi bi-trash"></i></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
